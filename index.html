@@ -1,67 +1,94 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css">
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Để làm gì cơ chứ? Hứ...</title>
+</head>
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+<body>
+<div class="container">
 
-        <title>Responsive christmas website - Bedimcode</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+    <div class="circle center">
+        <div class="rondje center">
+            <div class="text">
+                <p>Bạn nhìn mình quay vòng vòng nè...</p>
+            </div>
+        </div>
+        <script>
+            const text = document.querySelector('.text p');
+            text.innerHTML = text.innerText.split('').map(
+                (char, i) =>
+                    `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
+            ).join('');
+        </script>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+        <div class="snow_falling"></div>
+        <div class="snow_falling2"></div>
+        <div class="snow_floor"></div>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
 
-            <!--==================== SEND ====================-->
-            <section class="send section" id="send">
-                
-            </section>
+        <div class="falling_star">
+            <div class="star"></div>
+        </div>
 
-            <!--==================== CELEBRATE ====================-->
-            <section class="celebrate section" id="celebrate">
-                
-            </section>
-        </main>
+        <div class="house">
+            <div class="wall"></div>
+            <div class="roof"></div>
+            <div class="smoke">
+                <span style="--i:1"></span>
+                <span style="--i:3"></span>
+                <span style="--i:6"></span>
+                <span style="--i:5"></span>
+                <span style="--i:10"></span>
+                <span style="--i:7"></span>
+                <span style="--i:12"></span>
+                <span style="--i:8"></span>
+                <span style="--i:2"></span>
+                <span style="--i:4"></span>
+                <span style="--i:9"></span>
+            </div>
+            <div class="chimney"></div>
+            <div class="roof_sides"></div>
+            <div class="door"></div>
+            <div class="door_snow"></div>
+            <div class="window"></div>
+            <div class="window_round"></div>
+        </div>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            
-        </footer>
+        <div class="tree_1 center">
+            <div class="trunk center"></div>
+            <div class="leaves_1 center"></div>
+            <div class="leaves_2 center"></div>
+            <div class="leaves_3 center"></div>
+        </div>
 
-        <!--========== SCROLL UP ==========-->
-        
+        <div class="tree_2 center">
+            <div class="trunk center"></div>
+            <div class="leaves_1 center"></div>
+            <div class="leaves_2 center"></div>
+            <div class="leaves_3 center"></div>
+        </div>
 
-        <!--=============== RELLAX JS ===============-->
-        <script src=""></script>
+        <div class="snowman">
+            <div class="face"></div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+            <div class="buttons"></div>
+            <div class="arm right"></div>
+            <div class="arm left"></div>
+            <div class="shadow"></div>
+        </div>
 
-        <!--=============== GSAP ===============-->
-        <script src=""></script>
-
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+        <div class="stand">
+            <div class="stand_shadow"></div>
+            <div class="stand_highlight"></div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
